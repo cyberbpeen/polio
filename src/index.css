@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  html {
+    @apply overflow-x-hidden;
+  }
+  section,
+  header,
+  footer {
+    @apply w-screen items-center overflow-hidden px-4 md:px-8;
+  }
+}
+
+h1 {
+  @apply text-display-md lg:text-display-lg font-bold text-gray-900;
+}
+
+h2 {
+  @apply text-display-sm lg:text-display-md font-bold text-gray-900;
+}
+.container {
+  @apply w-full h-full lg:max-w-[1140px] mx-auto flex justify-between items-center;
+}
